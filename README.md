@@ -7,7 +7,7 @@ Con el tiempo, descubrí que mi verdadera vocación estaba en la enseñanza. Por
 
 Después de cinco años en el IES Severo Ochoa d'Elx (centro de excelencia en Informática y Comunicaciones), actualmente imparto clases de Sistemas y Aplicaciones Informáticas en el IES Macià Abela, donde contribuyo a formar a los futuros profesionales del sector TIC.
 
-También me puedes encontra en [Linkedin](https://www.linkedin.com/in/fjavier-hernandez-illan/).
+También me puedes encontra en [Linkedin](https://www.linkedin.com/in/fjavier-hernandez-illan/) o [Email](mailto:fj.hernandez@edu.gva.es).
 
 ## Materiales Didácticos
 En los siguientes enlaces podéis encontrar los apuntes de los módulos que he publicado:
