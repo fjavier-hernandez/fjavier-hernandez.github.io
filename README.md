@@ -1,7 +1,13 @@
 # Fº Javier Hernández Illán
-Hola, mi titulación es **Ingeniero Superior de Telecomunicaciones** y he trabajado **durante más de 10 años** en diferentes empresas privadas como **Telefónica I+D, Erikson, Grupo Verne**,...
+Mi nombre es Fº Javier Hernández Illán y soy docente de Formación Profesional en el ámbito de la informática.
 
-Tras dicha experiencia profesional decidí dedicarme a la docencia para ayudar al alumnado a obtener las competencias necesarias en el sector empresarial de las TIC, por esta razón actualmente soy **Profesor de Sistemas y Aplicaciones informáticas** en el **IES Severo Ochoa d'Elx**.
+Tras finalizar mis estudios como Ingeniero Superior de Telecomunicaciones, inicié mi carrera profesional en el sector privado, donde trabajé durante más de una década en empresas como Telefónica I+D, Ericsson y Grupo Verne. Esta etapa me permitió adquirir una sólida experiencia en tecnologías de la información y las comunicaciones.
+
+Con el tiempo, descubrí que mi verdadera vocación estaba en la enseñanza. Por ello, decidí dar un giro a mi trayectoria y dedicarme a la docencia, con el objetivo de ayudar al alumnado a desarrollar las competencias necesarias para enfrentarse con éxito al mundo laboral.
+
+Después de cinco años en el IES Severo Ochoa d'Elx (centro de excelencia en Informática y Comunicaciones), actualmente imparto clases de Sistemas y Aplicaciones Informáticas en el IES Macià Abela, donde contribuyo a formar a los futuros profesionales del sector TIC.
+
+También me puedes encontra en [Linkedin](https://www.linkedin.com/in/fjavier-hernandez-illan/).
 
 ## Materiales Didácticos
 En los siguientes enlaces podéis encontrar los apuntes de los módulos que he publicado:
