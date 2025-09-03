@@ -1,4 +1,7 @@
-# Presentación
+# Del sector TIC al aula
+Después de muchos años metido de lleno en el mundo TIC, decidí dar el salto a la docencia. Hoy comparto lo que sé desde el aula, con apuntes y recursos pensados para ayudar a quienes se están formando en Sistemas y Aplicaciones Informáticas.
+
+## Presentación
 Mi nombre es Francisco Javier Hernández Illán y soy docente de Formación Profesional en el ámbito de la informática.
 
 Tras finalizar mis estudios como Ingeniero Superior de Telecomunicaciones, inicié mi carrera profesional en el sector privado, donde trabajé durante más de una década en empresas como Telefónica I+D, Ericsson y Grupo Verne. Esta etapa me permitió adquirir una sólida experiencia en tecnologías de la información y las comunicaciones.
