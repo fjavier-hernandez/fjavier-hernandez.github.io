@@ -1,4 +1,4 @@
-# Francisco Javier Hernández Illán
+# Presentación
 Mi nombre es Francisco Javier Hernández Illán y soy docente de Formación Profesional en el ámbito de la informática.
 
 Tras finalizar mis estudios como Ingeniero Superior de Telecomunicaciones, inicié mi carrera profesional en el sector privado, donde trabajé durante más de una década en empresas como Telefónica I+D, Ericsson y Grupo Verne. Esta etapa me permitió adquirir una sólida experiencia en tecnologías de la información y las comunicaciones.
