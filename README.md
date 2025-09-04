@@ -1,4 +1,4 @@
-# Del sector TIC al aula
+# Apuntes FP Informática
 Después de muchos años metido de lleno en el mundo TIC, decidí dar el salto a la docencia. Hoy comparto lo que sé desde el aula, con apuntes y recursos pensados para ayudar a quienes se están formando en ciclos formativos de informática.
 
 ## Presentación
