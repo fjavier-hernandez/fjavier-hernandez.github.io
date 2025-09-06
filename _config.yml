@@ -1,6 +1,3 @@
 title: Apuntes Francisco Javier Hernández Illán
 description: Del sector TIC al aula
-theme:
-  name: material
-  palette:
-    scheme: slate
+theme: jekyll-theme-minimal
