@@ -13,6 +13,13 @@ Después de cinco años en el IES Severo Ochoa d'Elx (centro de excelencia en In
 También me puedes encontrar en [Linkedin](https://www.linkedin.com/in/fjavier-hernandez-illan/) o [Email](mailto:fj.hernandez@edu.gva.es).
 
 ## Materiales Didácticos
-En los siguientes enlaces podéis encontrar los apuntes de los módulos que he publicado:
-- [ASO Administración de Sistemas Operativos. 2ASIR. ](https://fjavier-hernandez.github.io/aso/)
+En los siguientes enlaces podéis encontrar los apuntes de los módulos que he publicado.
+
+### Ciclo Formativo de Grado Medio CGFM
+
+- [RAL Redes de Área Local. 1SMR](https://fjavier-hernandez.github.io/ral/)
 - [SOR Sistemas Operativos en Red. 2SMR. ](https://fjavier-hernandez.github.io/sor/)
+
+### Ciclo Formativo de Grado Superior CGFS
+
+- [ASO Administración de Sistemas Operativos. 2ASIR. ](https://fjavier-hernandez.github.io/aso/)
