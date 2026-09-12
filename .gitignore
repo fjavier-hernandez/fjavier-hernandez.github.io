@@ -1,0 +1,13 @@
+# build
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# logs / env
+npm-debug.log*
+.DS_Store
+.env
+.env.*
+!.env.example

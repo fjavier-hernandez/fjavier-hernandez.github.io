@@ -1,26 +1,65 @@
-# Apuntes FP Informática
-Después de muchos años metido de lleno en el mundo TIC, decidí dar el salto a la docencia. Hoy comparto lo que sé desde el aula, con apuntes y recursos pensados para ayudar a quienes se están formando en ciclos formativos de informática.
+# Apuntes FP Informática — F. Javier Hernández
 
-## Presentación
-Mi nombre es **Francisco Javier Hernández Illán** y soy docente de Formación Profesional en el ámbito de la informática.
+Dashboard personal (Astro) con accesos a materiales de FP Informática.
+Estética terminal / matrix. Sitio: [fjavier-hernandez.github.io](https://fjavier-hernandez.github.io/).
 
-Tras finalizar mis estudios como Ingeniero Superior de Telecomunicaciones, inicié mi carrera profesional en el sector privado, donde trabajé durante más de una década en empresas como **Telefónica I+D, Ericsson y Grupo Verne**. Esta etapa me permitió adquirir una sólida experiencia en tecnologías de la información y las comunicaciones.
+> Migración desde Jekyll (`jekyll-theme-hacker`). Los restos del sitio anterior están en [`archive/`](./archive/).
 
-Con el tiempo, descubrí que mi verdadera vocación estaba en la enseñanza. Por ello, decidí dar un giro a mi trayectoria y dedicarme a la docencia, con el objetivo de ayudar al alumnado a desarrollar las competencias necesarias para enfrentarse con éxito al mundo laboral.
+## Requisitos
 
-Después de cinco años en el IES Severo Ochoa d'Elx (centro de excelencia en Informática y Comunicaciones), actualmente imparto clases de Sistemas y Aplicaciones Informáticas en el **IES Macià Abela**, donde contribuyo a formar a los futuros profesionales del sector TIC.
+- Node.js ≥ 20.19 (ver `.nvmrc`)
 
-También me puedes encontrar en [Linkedin](https://www.linkedin.com/in/fjavier-hernandez-illan/) o [Email](mailto:fj.hernandez@edu.gva.es).
+## Desarrollo local
 
-## Materiales Didácticos
-En los siguientes enlaces podéis encontrar los apuntes de los módulos que he publicado.
+```sh
+npm install
+npm run dev
+```
 
-### Ciclo Formativo de Grado Medio CGFM
+Abre `http://localhost:4321`.
 
-- [RAL Redes de Área Local. 1SMR](https://fjavier-hernandez.github.io/ral/)
-- [SOR Sistemas Operativos en Red. 2SMR. ](https://fjavier-hernandez.github.io/sor/)
+| Comando            | Acción                                      |
+| :----------------- | :------------------------------------------ |
+| `npm run dev`      | Servidor de desarrollo                      |
+| `npm run build`    | Build estático en `./dist/`                 |
+| `npm run preview`  | Previsualiza el build localmente            |
 
-### Ciclo Formativo de Grado Superior CGFS
+## Estructura
 
-- [ASO Administración de Sistemas Operativos. 2ASIR. ](https://fjavier-hernandez.github.io/aso/)
-- [Proyecto Intermodular. 2ASIR. ](https://fjavier-hernandez.github.io/pi_asir/)
+```text
+/
+├── public/                 # Estáticos (favicon, verificación Search Console)
+├── src/
+│   ├── components/         # Card.astro
+│   ├── data/courses.json   # Enlaces a cursos / próximamente
+│   ├── layouts/            # Layout (header + estilos matrix)
+│   └── pages/              # / y /about
+├── archive/                # Restos Jekyll (referencia)
+└── .github/workflows/      # Deploy a GitHub Pages
+```
+
+## Páginas
+
+- `/` — dashboard con tarjetas de cursos
+- `/about` — biografía
+
+Cursos publicados (MkDocs en otros repos; no se tocan aquí):
+
+- [RAL](https://fjavier-hernandez.github.io/ral/)
+- [SOR](https://fjavier-hernandez.github.io/sor/)
+- [ASO](https://fjavier-hernandez.github.io/aso/)
+- [Proyecto Intermodular ASIR](https://fjavier-hernandez.github.io/pi_asir/)
+
+## Deploy a GitHub Pages
+
+1. En el repo **Settings → Pages → Build and deployment → Source**: **GitHub Actions**.
+2. Push a `main` (o dispara el workflow manualmente).
+3. El workflow [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml) hace `astro build` y publica `dist/` con Actions.
+
+`site` en `astro.config.mjs`: `https://fjavier-hernandez.github.io` (`base: '/'` porque el repo es `usuario.github.io`).
+
+## Contacto
+
+- Email: fj.hernandez@edu.gva.es
+- LinkedIn: [fjavier-hernandez-illan](https://www.linkedin.com/in/fjavier-hernandez-illan/)
+- GitHub: [fjavier-hernandez](https://github.com/fjavier-hernandez)

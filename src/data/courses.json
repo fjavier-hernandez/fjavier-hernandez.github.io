@@ -1,0 +1,44 @@
+[
+  {
+    "title": "RAL",
+    "subtitle": "Redes de Área Local · 1SMR",
+    "url": "https://fjavier-hernandez.github.io/ral/",
+    "icon": "Network",
+    "status": "live"
+  },
+  {
+    "title": "SOR",
+    "subtitle": "Sistemas Operativos en Red · 2SMR",
+    "url": "https://fjavier-hernandez.github.io/sor/",
+    "icon": "Server",
+    "status": "live"
+  },
+  {
+    "title": "ASO",
+    "subtitle": "Administración de Sistemas Operativos · 2ASIR",
+    "url": "https://fjavier-hernandez.github.io/aso/",
+    "icon": "Terminal",
+    "status": "live"
+  },
+  {
+    "title": "Proyecto Intermodular",
+    "subtitle": "Proyecto Intermodular ASIR · 2ASIR",
+    "url": "https://fjavier-hernandez.github.io/pi_asir/",
+    "icon": "Folders",
+    "status": "live"
+  },
+  {
+    "title": "Coordinación TIC",
+    "subtitle": "Materiales y recursos de coordinación",
+    "url": null,
+    "icon": "Cpu",
+    "status": "soon"
+  },
+  {
+    "title": "Coordinación FE",
+    "subtitle": "Formación en Empresa",
+    "url": null,
+    "icon": "Briefcase",
+    "status": "soon"
+  }
+]

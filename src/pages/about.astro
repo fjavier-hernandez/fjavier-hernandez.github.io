@@ -1,0 +1,155 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About | F. Javier Hernández" description="Biografía de Francisco Javier Hernández Illán — docente de FP Informática">
+	<article class="about">
+		<a href="/" class="back">&lt; volver al dashboard</a>
+
+		<header class="about-header">
+			<p class="eyebrow">~/about</p>
+			<h1>Sobre mí</h1>
+		</header>
+
+		<div class="content">
+			<p>
+				Después de muchos años metido de lleno en el mundo TIC, decidí dar el salto a la docencia.
+				Hoy comparto lo que sé desde el aula, con apuntes y recursos pensados para ayudar a quienes
+				se están formando en ciclos formativos de informática.
+			</p>
+
+			<p>
+				Mi nombre es <strong>Francisco Javier Hernández Illán</strong> y soy docente de Formación
+				Profesional en el ámbito de la informática.
+			</p>
+
+			<p>
+				Tras finalizar mis estudios como Ingeniero Superior de Telecomunicaciones, inicié mi carrera
+				profesional en el sector privado, donde trabajé durante más de una década en empresas como
+				<strong>Telefónica I+D, Ericsson y Grupo Verne</strong>. Esta etapa me permitió adquirir una
+				sólida experiencia en tecnologías de la información y las comunicaciones.
+			</p>
+
+			<p>
+				Con el tiempo, descubrí que mi verdadera vocación estaba en la enseñanza. Por ello, decidí
+				dar un giro a mi trayectoria y dedicarme a la docencia, con el objetivo de ayudar al alumnado
+				a desarrollar las competencias necesarias para enfrentarse con éxito al mundo laboral.
+			</p>
+
+			<p>
+				Después de cinco años en el IES Severo Ochoa d'Elx (centro de excelencia en Informática y
+				Comunicaciones), actualmente imparto clases de Sistemas y Aplicaciones Informáticas en el
+				<strong>IES Macià Abela</strong>, donde contribuyo a formar a los futuros profesionales del
+				sector TIC.
+			</p>
+
+			<p class="contact-line">
+				También me puedes encontrar en
+				<a href="https://www.linkedin.com/in/fjavier-hernandez-illan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+				o por
+				<a href="mailto:fj.hernandez@edu.gva.es">email</a>
+				(<code>fj.hernandez@edu.gva.es</code>).
+			</p>
+		</div>
+	</article>
+</Layout>
+
+<style>
+	.about {
+		max-width: 42rem;
+		margin: 0.5rem auto 1.5rem;
+		padding: 1.35rem 1.5rem 1.6rem;
+		background: rgba(10, 18, 10, 0.85);
+		border: 1px solid var(--green-border);
+		border-radius: 0.4rem;
+		position: relative;
+	}
+
+	.about::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 3px;
+		background: var(--green);
+		box-shadow: 0 0 10px rgba(0, 255, 65, 0.45);
+		border-radius: 0.4rem 0 0 0.4rem;
+	}
+
+	.back {
+		display: inline-block;
+		font-family: var(--font-mono);
+		font-size: 0.8rem;
+		color: var(--green-dim);
+		text-decoration: none;
+		margin-bottom: 1rem;
+	}
+
+	.back:hover {
+		color: var(--green);
+		text-shadow: 0 0 10px rgba(0, 255, 65, 0.35);
+	}
+
+	.eyebrow {
+		font-family: var(--font-mono);
+		font-size: 0.72rem;
+		color: var(--text-muted);
+		letter-spacing: 0.04em;
+		margin: 0 0 0.35rem;
+	}
+
+	h1 {
+		font-family: var(--font-mono);
+		font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+		margin: 0 0 1.1rem;
+		color: var(--green);
+		letter-spacing: -0.02em;
+	}
+
+	.content {
+		font-size: 1rem;
+		line-height: 1.7;
+		color: var(--text);
+	}
+
+	.content p {
+		margin: 0 0 1rem;
+	}
+
+	.content p:last-child {
+		margin-bottom: 0;
+	}
+
+	.content strong {
+		color: var(--green);
+		font-weight: 600;
+	}
+
+	.content a {
+		color: var(--green);
+		text-decoration: underline;
+		text-underline-offset: 3px;
+		text-decoration-color: rgba(0, 255, 65, 0.4);
+	}
+
+	.content a:hover {
+		text-decoration-color: var(--green);
+	}
+
+	.content code {
+		font-family: var(--font-mono);
+		font-size: 0.88em;
+		color: var(--green-dim);
+		background: var(--green-faint);
+		padding: 0.1rem 0.35rem;
+		border-radius: 0.2rem;
+	}
+
+	.contact-line {
+		padding-top: 0.35rem;
+		border-top: 1px solid rgba(0, 255, 65, 0.15);
+		margin-top: 0.35rem !important;
+		padding-top: 1rem;
+	}
+</style>

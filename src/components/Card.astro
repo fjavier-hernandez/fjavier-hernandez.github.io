@@ -1,0 +1,210 @@
+---
+import * as Icons from 'lucide-astro';
+
+interface Props {
+	title: string;
+	subtitle: string;
+	url: string | null;
+	icon: string;
+	status: 'live' | 'soon';
+}
+
+const { title, subtitle, url, icon, status } = Astro.props;
+const IconComponent = (Icons as Record<string, any>)[icon] || Icons.HelpCircle;
+const isSoon = status === 'soon' || !url;
+const Tag = isSoon ? 'div' : 'a';
+---
+
+<Tag
+	class:list={['card', isSoon && 'card--soon']}
+	{...(isSoon
+		? { role: 'group', 'aria-disabled': 'true' }
+		: {
+				href: url!,
+				target: '_blank',
+				rel: 'noopener noreferrer',
+			})}
+>
+	<div class="card-inner">
+		<div class="icon-box" aria-hidden="true">
+			<IconComponent size={22} stroke-width={1.75} />
+		</div>
+		<div class="text">
+			<div class="title-row">
+				<h2 class="title">{title}</h2>
+				{isSoon ? (
+					<span class="badge">Próximamente</span>
+				) : (
+					<span class="badge badge--live">Disponible</span>
+				)}
+			</div>
+			<p class="subtitle">{subtitle}</p>
+		</div>
+		{!isSoon && (
+			<span class="arrow" aria-hidden="true">
+				<Icons.ChevronRight size={18} />
+			</span>
+		)}
+	</div>
+</Tag>
+
+<style>
+	.card {
+		display: block;
+		background: rgba(10, 18, 10, 0.85);
+		border: 1px solid var(--green-border);
+		border-radius: 0.4rem;
+		padding: 0.95rem 1.05rem;
+		text-decoration: none;
+		color: var(--text);
+		position: relative;
+		overflow: hidden;
+		transition:
+			transform 0.2s ease,
+			border-color 0.2s ease,
+			box-shadow 0.2s ease,
+			background 0.2s ease;
+		min-height: 5.5rem;
+	}
+
+	.card::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 3px;
+		background: var(--green);
+		box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+		opacity: 0.7;
+	}
+
+	.card:not(.card--soon):hover {
+		transform: translateY(-2px);
+		border-color: rgba(0, 255, 65, 0.55);
+		background: rgba(12, 28, 14, 0.95);
+		box-shadow:
+			0 0 0 1px rgba(0, 255, 65, 0.12),
+			0 8px 24px rgba(0, 0, 0, 0.45),
+			0 0 28px rgba(0, 255, 65, 0.08);
+	}
+
+	.card:not(.card--soon):hover .icon-box {
+		color: var(--green);
+		border-color: rgba(0, 255, 65, 0.45);
+		box-shadow: 0 0 14px rgba(0, 255, 65, 0.2);
+	}
+
+	.card:not(.card--soon):hover .arrow {
+		opacity: 1;
+		transform: translateX(0);
+		color: var(--green);
+	}
+
+	.card--soon {
+		opacity: 0.55;
+		cursor: default;
+		border-style: dashed;
+		border-color: rgba(0, 255, 65, 0.18);
+	}
+
+	.card--soon::before {
+		background: var(--text-muted);
+		box-shadow: none;
+		opacity: 0.5;
+	}
+
+	.card-inner {
+		display: flex;
+		align-items: center;
+		gap: 0.9rem;
+		position: relative;
+		z-index: 1;
+	}
+
+	.icon-box {
+		flex-shrink: 0;
+		width: 2.6rem;
+		height: 2.6rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid var(--green-border);
+		border-radius: 0.35rem;
+		color: var(--green-dim);
+		background: var(--green-faint);
+		transition: color 0.2s, border-color 0.2s, box-shadow 0.2s;
+	}
+
+	.text {
+		flex: 1;
+		min-width: 0;
+	}
+
+	.title-row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.45rem 0.65rem;
+		margin-bottom: 0.2rem;
+	}
+
+	.title {
+		margin: 0;
+		font-family: var(--font-mono);
+		font-size: 1.05rem;
+		font-weight: 600;
+		letter-spacing: -0.02em;
+		color: var(--green);
+		line-height: 1.2;
+	}
+
+	.card--soon .title {
+		color: var(--text-muted);
+	}
+
+	.subtitle {
+		margin: 0;
+		font-size: 0.82rem;
+		line-height: 1.35;
+		color: var(--text-muted);
+	}
+
+	.badge {
+		font-family: var(--font-mono);
+		font-size: 0.65rem;
+		font-weight: 500;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		padding: 0.15rem 0.4rem;
+		border: 1px dashed rgba(0, 255, 65, 0.35);
+		border-radius: 0.2rem;
+		color: var(--text-muted);
+		white-space: nowrap;
+	}
+
+	.badge--live {
+		border-style: solid;
+		border-color: rgba(0, 255, 65, 0.4);
+		color: var(--green-dim);
+		background: rgba(0, 255, 65, 0.08);
+	}
+
+	.arrow {
+		flex-shrink: 0;
+		opacity: 0;
+		transform: translateX(-6px);
+		transition: opacity 0.2s, transform 0.2s, color 0.2s;
+		color: var(--green-muted);
+	}
+
+	@media (max-width: 640px) {
+		.card {
+			padding: 0.85rem 0.9rem;
+			min-height: auto;
+		}
+		.title {
+			font-size: 0.98rem;
+		}
+	}
+</style>
