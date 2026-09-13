@@ -28,17 +28,17 @@
     "status": "live"
   },
   {
-    "title": "Coordinación TIC",
-    "subtitle": "Materiales y recursos de coordinación",
+    "title": "Cloud",
+    "subtitle": "Cloud computing · optativa, material en preparación",
     "url": null,
-    "icon": "Cpu",
+    "icon": "Cloud",
     "status": "soon"
   },
   {
-    "title": "Coordinación FE",
-    "subtitle": "Formación en Empresa",
+    "title": "Coordinación",
+    "subtitle": "TIC y Formación en Empresa",
     "url": null,
-    "icon": "Briefcase",
+    "icon": "ClipboardList",
     "status": "soon"
   }
 ]
