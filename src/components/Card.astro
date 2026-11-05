@@ -12,6 +12,7 @@ interface Props {
 const { title, subtitle, url, icon, status } = Astro.props;
 const IconComponent = (Icons as Record<string, any>)[icon] || Icons.HelpCircle;
 const isSoon = status === 'soon' || !url;
+const isExternal = Boolean(url && /^https?:\/\//i.test(url));
 const Tag = isSoon ? 'div' : 'a';
 ---
 
@@ -21,8 +22,7 @@ const Tag = isSoon ? 'div' : 'a';
 		? { role: 'group', 'aria-disabled': 'true' }
 		: {
 				href: url!,
-				target: '_blank',
-				rel: 'noopener noreferrer',
+				...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {}),
 			})}
 >
 	<div class="card-inner">
