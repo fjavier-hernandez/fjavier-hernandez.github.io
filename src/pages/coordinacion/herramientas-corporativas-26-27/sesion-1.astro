@@ -156,15 +156,14 @@ import Article from '../../../layouts/Article.astro';
 			cambiarla si se sospecha que alguien más la conoce.
 		</p>
 		<p>
-			Si la contraseña se ha olvidado, el camino es el
+			Si se ha olvidado la contraseña, se usa el
 			<a
 				href="https://acces.edu.gva.es/sso/ad/ad.forgot.xhtml"
 				target="_blank"
-				rel="noopener noreferrer">formulario de recuperación del mismo autoservicio</a
-			>. Pide la identidad digital y los datos de comprobación de la cuenta, en concreto la fecha de
-			nacimiento y el código de recuperación, y solo después permite definir una contraseña nueva. La
-			recuperación no se resuelve enviando la clave por correo o por el chat del seminario. El
-			recorrido de esas pantallas está desarrollado en los manuales siguientes.
+				rel="noopener noreferrer">formulario de recuperación del autoservicio oficial</a
+			>, que pide unos datos de comprobación de la cuenta antes de permitir una contraseña nueva. Los
+			pasos están en el manual oficial enlazado en «Para saber más». La recuperación no se resuelve
+			enviando la clave por correo o por el chat del seminario.
 		</p>
 		<h3>Para saber más</h3>
 		<p>
@@ -193,27 +192,34 @@ import Article from '../../../layouts/Article.astro';
 			en la cuenta si no supera esa prueba.
 		</p>
 		<p>
-			En los servicios de la Conselleria esta comprobación no es única. La que protege el correo y las
-			aplicaciones de Microsoft 365 va ligada a la cuenta @edu.gva.es. La que protege ITACA, el
-			sistema de información de la gestión educativa, es independiente. En la aplicación de
-			autenticación del móvil se distinguen porque cada una aparece como un elemento distinto.
-			Conviene revisar las dos, porque dejar configurada solo una deja la otra pendiente.
+			Según la
+			<a
+				href="https://portal.edu.gva.es/identitatdigital/es/id-autenticacion-multifactor/"
+				target="_blank"
+				rel="noopener noreferrer">guía oficial de autenticación multifactor</a
+			>, el doble factor del correo y de Microsoft 365 y el de ITACA, el sistema de información de la
+			gestión educativa, son totalmente independientes: configurar uno no configura el otro. En la
+			aplicación Authenticator se distinguen con claridad. El de Microsoft 365 aparece con el correo
+			corporativo y el nombre «Conselleria d'Educación», y se autoriza con una notificación en el
+			móvil. El de ITACA aparece como «GVA Educación» y funciona con un código de verificación.
+			Conviene revisar los dos, porque dejar configurado solo uno deja el otro pendiente.
 		</p>
 		<p>
-			Conviene también registrar un segundo método de recuperación. El móvil se cambia, se pierde o se
-			queda sin batería justo cuando hace falta entrar, y un único método deja la cuenta cerrada. El
-			segundo método existe para ese caso. El aviso por mensaje de texto o por llamada no debe quedar
-			como único recurso, porque está previsto que deje de aceptarse el 1 de febrero de 2027. El
-			método de reserva tiene que ser uno de los que el servicio mantiene, por ejemplo otra aplicación
-			de autenticación, un gestor en el ordenador o una extensión del navegador.
-		</p>
-		<p>
-			Si se cambia de móvil y el método anterior sigue disponible, se entra con él, se da de baja el
-			aparato antiguo y se registra el nuevo desde la
+			También hay que tener más de un método. La llamada o el SMS, el mensaje de texto, es un sistema
+			que se va a retirar y
+			se desactiva automáticamente el 1 de febrero de 2027, así que hay que tener configurados al menos
+			dos métodos de los que el servicio mantiene: una aplicación de autenticación, KeePassXC en el
+			ordenador o una extensión del navegador. Esos métodos se gestionan en
 			<a href="https://myaccount.microsoft.com/" target="_blank" rel="noopener noreferrer"
-				>información de seguridad de la cuenta</a
-			>. Si se ha perdido el único método y no hay forma de entrar, no se usa la contraseña ni el
-			código de otra persona: se abre una incidencia en el SAI para restablecer el acceso.
+				>https://myaccount.microsoft.com/</a
+			>, en el apartado Información de seguridad, y la configuración no se puede hacer desde el
+			extranjero.
+		</p>
+		<p>
+			Si se cambia de móvil y todavía queda otro método disponible, se entra con él, se da de baja el
+			aparato antiguo y se registra el nuevo desde ese mismo apartado. Si se ha perdido el único método
+			y no hay forma de entrar, no se usa la contraseña ni el código de otra persona: se abre una
+			incidencia en el SAI para restablecer el acceso.
 		</p>
 		<h3>Para saber más</h3>
 		<p>
